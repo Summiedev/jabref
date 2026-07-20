@@ -43,7 +43,7 @@ Vagrant.configure("2") do |config|
     # gnome-extensions install --force shell-extension.zip
 
     # Install mise, clone JabRef's source code, and do an initial build
-    curl https://mise.run | sh
+    # REMOVED BY REPOGUARD: curl|bash remote execution
     echo 'eval "$(~/.local/bin/mise activate bash)"' >> ~/.bashrc
   SHELL
 
